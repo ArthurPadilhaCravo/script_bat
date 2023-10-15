@@ -1,0 +1,21 @@
+Neste script:
+
+@echo off: Isso desativa a exibição dos comandos à medida que são executados, tornando o script mais limpo.
+
+setlocal: Isso cria um ambiente de variável local, para que as variáveis definidas no script não afetem o ambiente global do sistema.
+
+set "temp_dir" e set "cache_dir": Essas linhas definem os diretórios que você deseja limpar. Certifique-se de ajustar os caminhos para corresponder aos diretórios de arquivos temporários e de cache no seu sistema.
+
+del /q: Este comando é usado para excluir arquivos. A opção /q suprime as mensagens de confirmação.
+
+Lembre-se de que este é um exemplo simples e pode ser personalizado conforme necessário para atender às suas necessidades. Para agendar a execução deste script regularmente, você pode usar o Agendador de Tarefas do Windows:
+
+Abra o "Agendador de Tarefas" no Windows.
+
+Clique em "Criar Tarefa Básica" e siga o assistente para configurar a tarefa.
+
+Na etapa "Ação", escolha "Iniciar um programa" e selecione o script .bat que você criou.
+
+Configure a frequência e o horário em que deseja que a tarefa seja executada.
+
+Conclua o assistente e a tarefa será agendada para ser executada automaticamente de acordo com as configurações especificadas. Isso ajudará a liberar espaço em disco regularmente excluindo arquivos temporários.

@@ -1,0 +1,11 @@
+Aqui está uma explicação do código:
+
+@echo off: Isso desativa a exibição dos comandos à medida que são executados, tornando o script mais limpo.
+
+set origem e set destino: Essas linhas definem as variáveis origem e destino para especificar o diretório de origem (onde seus arquivos importantes estão localizados) e o diretório de destino (onde você deseja copiá-los).
+
+robocopy: O comando robocopy é usado para copiar diretórios e arquivos. Neste exemplo, ele copia todos os arquivos e subdiretórios da origem para o destino (/e). O /COPYALL copia atributos, permissões e timestamps. /R:1 especifica o número de tentativas em caso de falha e /W:1 define o tempo de espera entre as tentativas.
+
+if errorlevel 16: Isso verifica o código de saída do comando robocopy para determinar se ocorreram erros durante a cópia. O código 16 indica que ocorreram erros. O script exibe uma mensagem apropriada com base no código de saída.
+
+pause: Isso impede que o script seja fechado imediatamente após a execução, permitindo que você veja as mensagens.
